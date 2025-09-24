@@ -24,19 +24,33 @@ Agora, novos tipos de frete, promoções ou formatos de etiqueta podem ser adici
 
 🏗️ Estrutura do Projeto
 src/
+
 ├── dominio/
+
 │   └── Entrega.java
+
 ├── frete/
+
 │   ├── CalculadoraFrete.java
+
 │   ├── FreteExpresso.java
+
 │   ├── FretePadrao.java
+
 │   └── FreteEconomico.java
+
 ├── promocoes/
+
 │   └── PromocaoFrete.java
+
 ├── servicos/
+
 │   └── EtiquetaService.java
+
 ├── excecoes/
+
 │   └── EntregaInvalidaException.java
+
 └── Main.java
 
 
