@@ -123,4 +123,5 @@ Execute a classe Main para rodar o sistema.
 👩‍💻 Autor(a)
 
 Projeto desenvolvido por Maria Luiza Fidalgo da Costa
+
 Estudante de Engenharia de Software - Instituto Infnet
