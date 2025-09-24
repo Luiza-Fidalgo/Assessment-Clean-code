@@ -22,6 +22,7 @@ Agora, novos tipos de frete, promoções ou formatos de etiqueta podem ser adici
 
 ✅ Baixo acoplamento: usando interfaces, composição e injeção de dependências.
 
+
 🏗️ Estrutura do Projeto
 src/
 
@@ -55,10 +56,15 @@ src/
 
 
 📂 domínio → entidades principais (ex.: Entrega).
+
 📂 frete → diferentes estratégias de cálculo de frete.
+
 📂 promocoes → regras de descontos e promoções.
+
 📂 servicos → lógica de geração de etiquetas.
+
 📂 excecoes → tratamento de erros e estados inválidos.
+
 
 🧪 Testes Automatizados
 
@@ -76,8 +82,11 @@ Exemplo de teste:
 
 @Test
 void deveAplicarDescontoPorPeso() {
+
     Entrega entrega = new Entrega("Rua Y", "Paula", 11);
+    
     double valor = PromocaoFrete.aplicarDescontoPorPeso(entrega, new FreteEconomico());
+    
     assertEquals(6.0, valor, 0.01);
 }
 
@@ -93,6 +102,8 @@ Testabilidade: fácil garantir que cada regra de negócio funciona corretamente.
 
 Robustez: exceções e validações evitam estados inválidos.
 
+
+
 💡 Como Rodar o Projeto
 
 Clone o repositório:
@@ -106,8 +117,8 @@ Compile e rode os testes:
 
 mvn clean test
 
-
 Execute a classe Main para rodar o sistema.
+
 
 👩‍💻 Autor(a)
 
